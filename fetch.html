@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<body>
+    <article>
+
+    </article>
+    <input type="button" value="fetch" onclick="
+        /* fetch('html').then(function(response){ 여기서 부터
+            response.text().then(function(text){
+                document.querySelector('article').innerHTML = text;
+            }) 
+        })여기까지가 하나의 문 */
+        // Asynchronous 비동기 Ajax중 철자중하나
+        fetch('html').then(function(response){
+            if(response.status == '404'){
+                alert('not found');
+            }
+        });
+        console.log(1);
+        console.log(2);
+        /* fetch함수는 첫번째 인자로 전달된 데이터를 서버에게 요청하는 함수 */
+        /* then fetch에서 불러온 데이터를 웹요청이(?) 다끝났을때 안의 element를 실행하라 */
+    ">
+</body>
+
+</html>
